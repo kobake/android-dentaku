@@ -64,8 +64,8 @@ class Data{
 	// メモリ機能
 	public void MemRead() { mNumbers[mCur].set(mMem); mNumbers[mCur].nextReset(); }
 	public void MemClear(){ mMem = new Number("0"); }
-	public void MemPlus() throws Exception { mMem = new Operator("+").calc(mMem, mNumbers[mCur]); }
-	public void MemMinus() throws Exception{ mMem = new Operator("-").calc(mMem, mNumbers[mCur]); }
+	public void MemPlus() throws Exception { mMem = new Operator("+").calc(mMem, getAppearanceNumber()); }
+	public void MemMinus() throws Exception{ mMem = new Operator("-").calc(mMem, getAppearanceNumber()); }
 	
 	// -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
 	// 計算
@@ -90,7 +90,10 @@ class Data{
 	
 	// 数値パネルへの表示
 	public String getAppearance(){
-		if(mNumbers[mCur].isEmpty())return mNumbers[0].getAppearance();
-		return mNumbers[mCur].getAppearance();
+		return getAppearanceNumber().getAppearance();
+	}
+	public Number getAppearanceNumber(){
+		if(mNumbers[mCur].isEmpty())return mNumbers[0];
+		return mNumbers[mCur];
 	}
 }
