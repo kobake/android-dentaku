@@ -38,7 +38,7 @@ class Data{
 	// -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
 	// 現在の辺を操作
 	public void currentAdd(String text) throws Exception{ mNumbers[mCur].add(text); }
-	public void currentClear()                          { mNumbers[mCur].clear(""); }
+	public void currentClear()                          { mNumbers[mCur].clear(); }
 	public void currentBackSpace()                      { mNumbers[mCur].backSpace(); }
 	
 	// 演算子設定
@@ -50,7 +50,7 @@ class Data{
 		// 演算子設定
 		mOp.set(text);
 		mCur = 1;
-		mNumbers[1].clear(""); // 完全クリア
+		mNumbers[1].clear(); // 完全クリア
 	}
 	
 	// クリア（ぜんぶ）

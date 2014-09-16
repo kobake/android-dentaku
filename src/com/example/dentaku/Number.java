@@ -46,8 +46,8 @@ public class Number{
 		mValue += text;
 		mToBeReset = false;
 	}
-	public void clear(String text){
-		mValue = text;
+	public void clear(){
+		mValue = "";
 		mToBeReset = false;
 	}
 	public void backSpace(){
