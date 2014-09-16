@@ -1,0 +1,251 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dentaku.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:background="@drawable/label_border"
+        android:gravity="right"
+        android:paddingBottom="5dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="12dp"
+        android:paddingTop="5dp"
+        android:text="0"
+        android:textColor="#222"
+        android:textSize="40dp" />
+
+    <LinearLayout
+        style="@style/DentakuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/Button20"
+            style="@style/DentakuButton"
+            android:layout_weight="2"
+            android:text="AC"
+             />
+
+        <Button
+            android:id="@+id/Button21"
+            style="@style/DentakuButton"
+            
+            
+            
+            android:text="C" />
+
+        <Button
+            android:id="@+id/Button23"
+            style="@style/DentakuButton"
+            
+            
+            
+            android:text="BS" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/DentakuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/Button16"
+            style="@style/DentakuButton"
+            
+            
+            
+            android:text="MR" />
+
+        <Button
+            android:id="@+id/Button18"
+            style="@style/DentakuButton"
+            
+            
+            
+            android:text="MC" />
+
+        <Button
+            android:id="@+id/Button19"
+            style="@style/DentakuButton"
+            
+            
+            
+            android:text="M+" />
+
+        <Button
+            android:id="@+id/Button17"
+            style="@style/DentakuButton"
+            
+            
+            
+            android:text="M-" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/DentakuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/Button13"
+            style="@style/DentakuButton"
+            
+            
+            
+            android:text="7" />
+
+        <Button
+            android:id="@+id/Button15"
+            style="@style/DentakuButton"
+            
+            
+            
+            android:text="8" />
+
+        <Button
+            android:id="@+id/Button14"
+            style="@style/DentakuButton"
+            
+            
+            
+            android:text="9" />
+
+        <Button
+            android:id="@+id/Button12"
+            style="@style/DentakuButton"
+            
+            
+            
+            android:text="+" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/DentakuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/Button09"
+            style="@style/DentakuButton"
+            
+            
+            
+            android:text="4" />
+
+        <Button
+            android:id="@+id/Button11"
+            style="@style/DentakuButton"
+            
+            
+            
+            android:text="5" />
+
+        <Button
+            android:id="@+id/Button10"
+            style="@style/DentakuButton"
+            
+            
+            
+            android:text="6" />
+
+        <Button
+            android:id="@+id/Button08"
+            style="@style/DentakuButton"
+            
+            
+            
+            android:text="-" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/DentakuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/Button05"
+            style="@style/DentakuButton"
+            
+            
+            
+            android:text="1" />
+
+        <Button
+            android:id="@+id/Button07"
+            style="@style/DentakuButton"
+            
+            
+            
+            android:text="2" />
+
+        <Button
+            android:id="@+id/Button06"
+            style="@style/DentakuButton"
+            
+            
+            
+            android:text="3" />
+
+        <Button
+            android:id="@+id/Button04"
+            style="@style/DentakuButton"
+            
+            
+            
+            android:text="*" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/DentakuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/Button03"
+            style="@style/DentakuButton"
+            
+            
+            
+            android:text="0" />
+
+        <Button
+            android:id="@+id/Button02"
+            style="@style/DentakuButton"
+            
+            
+            
+            android:text="00" />
+
+        <Button
+            android:id="@+id/Button01"
+            style="@style/DentakuButton"
+            
+            
+            
+            android:text="=" />
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/DentakuButton"
+            
+            
+            
+            android:text="/" />
+        
+                
+    </LinearLayout>
+
+</LinearLayout>
