@@ -50,6 +50,18 @@ class ClearButtonAction implements ButtonAction{
 // メモリ系
 class MemoryButtonAction implements ButtonAction{
 	public void action(String text) throws Exception{
+		if(text.equals("MR")){
+			Data.getInstance().MemRead();
+		}
+		else if(text.equals("MC")){
+			Data.getInstance().MemClear();
+		}
+		else if(text.equals("M+")){
+			Data.getInstance().MemPlus();
+		}
+		else if(text.equals("M-")){
+			Data.getInstance().MemMinus();
+		}
 	}
 }
 

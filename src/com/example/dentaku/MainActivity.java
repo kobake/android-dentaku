@@ -19,6 +19,7 @@ public class MainActivity extends Activity {
 	// 上部のデバッグ用表示
 	TextView[] mTextViewNumbers = new TextView[2];
 	TextView mTextViewOp;
+	TextView mTextViewMem;
 	
 	// 処理リスト
 	HashMap<String, ButtonAction> mActions = new HashMap<String, ButtonAction>();
@@ -36,6 +37,7 @@ public class MainActivity extends Activity {
 		mTextViewNumbers[0] = (TextView)findViewById(R.id.textViewLeft);
 		mTextViewNumbers[1] = (TextView)findViewById(R.id.textViewRight);
 		mTextViewOp = (TextView)findViewById(R.id.textViewOp);
+		mTextViewMem = (TextView)findViewById(R.id.textViewMem);
 		
 		// -- -- 処理 -- -- //
 		// 数字
@@ -86,6 +88,8 @@ public class MainActivity extends Activity {
 		int current = Data.getInstance().getCurrentIndex();
 		mTextViewNumbers[current].setTextColor(Color.rgb(255, 0, 0)); // 強調色
 		mTextViewNumbers[1 - current].setTextColor(Color.rgb(0, 0, 0)); // 通常色
+		// メモリ機能状態
+		mTextViewMem.setText("MEM:" + Data.getInstance().getMemDebug());
 	}
 
 	// ボタン押下時

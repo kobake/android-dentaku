@@ -16,6 +16,10 @@ public class Number{
 	public Number(String t){
 		mValue = t;
 	}
+	void set(Number n){
+		mValue = n.mValue;
+		mToBeReset = false;
+	}
 	
 	// -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
 	// 状態

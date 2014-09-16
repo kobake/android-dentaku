@@ -47,7 +47,7 @@ public class Operator{
 		case "*": return new Number(left.multiply(right).toString());
 		case "/":
 			if(right.equals(BigDecimal.ZERO))throw new Exception("0で割ることはできません");
-			return new Number(left.divide  (right).toString());
+			return new Number(left.divide(right, 0, BigDecimal.ROUND_HALF_UP).toString());
 		default:
 			throw new Exception("不明な演算子");
 		}

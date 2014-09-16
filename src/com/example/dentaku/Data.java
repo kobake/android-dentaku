@@ -12,6 +12,9 @@ class Data{
 	private Number[] mNumbers = new Number[2];
 	private Operator mOp    = new Operator();
 	
+	// メモリ
+	private Number   mMem   = new Number("0");
+	
 	// 現在の入力場所
 	private int      mCur   = 0;
 	
@@ -58,6 +61,12 @@ class Data{
 		mCur        = 0;
 	}
 	
+	// メモリ機能
+	public void MemRead() { mNumbers[mCur].set(mMem); mNumbers[mCur].nextReset(); }
+	public void MemClear(){ mMem = new Number("0"); }
+	public void MemPlus() throws Exception { mMem = new Operator("+").calc(mMem, mNumbers[mCur]); }
+	public void MemMinus() throws Exception{ mMem = new Operator("-").calc(mMem, mNumbers[mCur]); }
+	
 	// -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
 	// 計算
 	// -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
@@ -75,8 +84,9 @@ class Data{
 	// -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
 	// デバッグ用表示
 	public String getLeftDebug() { return mNumbers[0].getDebug(); }
-	public String getOpDebug()   { return mOp.getDebug();         }
+	public String getOpDebug()   { return mOp        .getDebug(); }
 	public String getRightDebug(){ return mNumbers[1].getDebug(); }
+	public String getMemDebug()  { return mMem       .getDebug(); }
 	
 	// 数値パネルへの表示
 	public String getAppearance(){
