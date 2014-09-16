@@ -1,7 +1,7 @@
 package com.example.dentaku;
 
 // データ統括(Singleton)
-class Data{
+public class Data{
 	// Singleton
 	private static Data data = new Data();
 	public static Data getInstance(){
